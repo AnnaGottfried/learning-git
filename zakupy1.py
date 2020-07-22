@@ -10,5 +10,6 @@ for place, item in zakupy.items():
         ilosc_przedmiotow+=1
 
 
-print('W sumię kupuje {} produktów'.format(ilosc_przedmiotow))        
+print('W sumię kupuje {} produktów'.format(ilosc_przedmiotow))   
+print('nie cierpię Monthy Pythona')
 
