@@ -12,4 +12,6 @@ for place, item in zakupy.items():
 
 print('W sumię kupuje {} produktów'.format(ilosc_przedmiotow))   
 print('nie cierpię Monthy Pythona')
+print(' bardzo lubię Hallo Hallo')
+print(' z upływem czasu przestał bawić Louis de Funes w żandarmie z Saint-Tropez')
 
