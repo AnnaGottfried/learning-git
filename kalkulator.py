@@ -19,3 +19,4 @@ else:
 
 
 print("wynikiem operacji {} jest {}".format(rodzaj, wynik))              
+print("koniec")
