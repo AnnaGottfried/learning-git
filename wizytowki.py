@@ -9,8 +9,8 @@ class BaseContact:
        self.email=email
 
    
-   def contact(self,imie,nazwisko,telefon_priv):
-       print(f"Wybieram numer prywatny {telefon_priv} i dzwonię do {imie} {nazwisko}")
+   def contact(self):
+       print("Wybieram numer prywatny {} i dzwonię do {} {}".format(self.telefon_priv,self.imie,self.nazwisko))
 
 class BusinessContact(BaseContact):
 
@@ -20,8 +20,8 @@ class BusinessContact(BaseContact):
        self.nazwa_firmy=nazwa_firmy
        self.telefon_business=telefon_business
 
-    def contact(self,imie,nazwisko,telefon_business):
-       print(f"Wybieram numer służbowy {telefon_business} i dzwonię do {imie} {nazwisko}")   
+    def contact(self):
+       print(f"Wybieram numer służbowy {self.telefon_business} i dzwonię do {self.imie} {self.nazwisko}")   
 
 
 def create_contacts(rodzaj,ilosc):
@@ -47,11 +47,11 @@ def create_contacts(rodzaj,ilosc):
         if rodzaj=='priv':
             user1=BaseContact(imie,nazwisko,telefon_priv,email)
             print(100*'-')
-            user1.contact(imie,nazwisko,telefon_priv)
+            user1.contact()
         else:
             user = BusinessContact(imie,nazwisko,stanowisko,nazwa_firmy, telefon_priv,email, telefon_business)
             print(100*'-')
-            user.contact(imie,nazwisko,telefon_business)
+            user.contact()
 
 
    
