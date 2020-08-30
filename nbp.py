@@ -5,11 +5,13 @@ import json
 response = requests.get("http://api.nbp.pl/api/exchangerates/tables/C?format=json")
 data = response.json()
 
+nazwa_pliku='waluty_'+data[0]["effectiveDate"]+'.csv'
+#print(nazwa_pliku)
 
-with open('waluty.csv', 'w', newline='') as file:
+with open(nazwa_pliku, 'w', newline='') as file:
     writer = csv.writer(file,delimiter=";")
-    writer.writerow(['Kursy kupna i sprzedaży walut obcych – tabela C- NBP'])
-    writer.writerow(['na dzien: '+data[0]["effectiveDate"] ])
+   # writer.writerow(['Kursy kupna i sprzedaży walut obcych – tabela C- NBP'])
+    #writer.writerow(['na dzien: '+data[0]["effectiveDate"] ])
     writer.writerow(["Currency", "Code", "Bid","Ask"])
     for item in data[0]["rates"]:
         
