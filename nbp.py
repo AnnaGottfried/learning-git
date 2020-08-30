@@ -11,8 +11,13 @@ with open('waluty.csv', 'w', newline='') as file:
     writer.writerow(['Kursy kupna i sprzedaży walut obcych – tabela C- NBP'])
     writer.writerow(['na dzien: '+data[0]["effectiveDate"] ])
     writer.writerow(["Currency", "Code", "Bid","Ask"])
-    for item in range(13):
-        writer.writerow([data[0]["rates"][item]['currency'],data[0]["rates"][item]['code'],data[0]["rates"][item]['bid'],data[0]["rates"][item]['ask']])
+    for item in data[0]["rates"]:
+        
+        writer.writerow([item['currency'],item['code'],item['bid'],item['ask']])
+
+ #   for item in data[0]["rates"]:
+
+ #       print(item['currency'])
 
 
 
