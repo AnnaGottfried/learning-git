@@ -11,3 +11,24 @@ body {
     font-family: verdana;
     font-size: 14px;
   }
+
+
+
+  p.test1 {
+    color: darkblue; 
+    font-size: 34px;
+
+  }
+
+  p.test2 {
+   
+    font-size: 20px;
+
+  }
+ li {
+   
+    font-size: 22px;
+
+  }
+
+
