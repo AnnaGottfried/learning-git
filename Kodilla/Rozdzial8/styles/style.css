@@ -1,0 +1,57 @@
+body {
+    background-color: #7dcdd8d4;
+    color:black;
+    
+}
+section {
+    margin-left: 10px;
+    line-height: 1.8;
+    
+}
+
+table{
+    background-color:#49494d;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+
+}
+a {
+
+    color:white;
+    text-;
+}
+
+a.mail {
+
+    color:black;
+}
+h1 {
+    color: white;
+    text-shadow: 4px 4px 8px #000000;
+    text-align: center;
+}
+h3 {
+
+    color: black;
+}
+
+img {
+
+    outline-offset=30px;
+}
+
+#glowna {
+
+    color:#8b2828;
+}
+
+.round{
+    border-radius:50%
+}
+
+ul.a {
+    list-style-type: circle;
+    font-size: large;
+    line-height: 1.8;
+  }
